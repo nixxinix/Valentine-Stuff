@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Proposal</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function showMessage() {
+      alert("Yay! You said yes! Happy Valentine's Day!");
+    }
+
+    function moveNoButton() {
+      const noButton = document.getElementById('no-btn');
+      const container = document.querySelector('.button-container');
+      const containerRect = container.getBoundingClientRect();
+
+      const newX = Math.random() * (containerRect.width - noButton.offsetWidth);
+      const newY = Math.random() * (containerRect.height - noButton.offsetHeight);
+
+      noButton.style.left = `${newX}px`;
+      noButton.style.top = `${newY}px`;
+    }
+  </script>
+</head>
+<body>
+  <h1>Can you be my Valentine?</h1>
+  <div class="button-container">
+    <button onclick="showMessage()">Yes</button>
+    <button id="no-btn" onmouseover="moveNoButton()">No</button>
+  </div>
+</body>
+</html>

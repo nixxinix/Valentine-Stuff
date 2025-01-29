@@ -1,0 +1,44 @@
+/* Reset default body styles */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6e6;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #ff4d4d;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    position: relative;
+    display: flex;
+    gap: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    background-color: #ff9999;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ff4d4d;
+  }
+  
+  #no-btn {
+    position: relative;
+  }
+  
